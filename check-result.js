@@ -48,7 +48,7 @@ async function checkStatus() {
 	});
 	var config = {
 	  method: 'post',
-	  url: 'https://heidelberg.corona-ergebnis.de/Home/Results',
+	  url: statusUrl,
 	  headers: { 
 	    'cookie': csrfToken.cookies.join('; '), 
 	    'Content-Type': 'application/x-www-form-urlencoded'
