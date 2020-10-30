@@ -14,6 +14,9 @@ Einfache Überprüfung auf der Konsole mit
 ```
 node .\check-result.js
 ```
+> Covid test result available: FALSE
+```
+
 
 ## Erweiterung
 
