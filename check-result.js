@@ -62,8 +62,11 @@ async function checkStatus() {
 	let html = result.data;
 	let resultText = cheerio('div[class=well]', html).text();
 	let resultAvailable = resultText.search("(ER03)") == -1;
-
 	console.log('Covid test result available: ' + resultAvailable.toString().toUpperCase())
+
+	if(resultAvailable) {
+		console.log(resultText);
+	}
 	return resultAvailable;
 }
 
